@@ -1,5 +1,6 @@
 'use strict';
-require(['jquery', 'backbone'], function ($, Backbone) {
-    console.log('jQuery', $().jquery);
-    console.log('Backbone', Backbone.VERSION);
+require(['openq/controllers/uploads-controller'], function (UploadsController) {
+    
+    var controller = new UploadsController();
+    controller.index();
 });
